@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "../src/app.css";
+import "./app.css";
 
 
 import Classbasedcomponent from "./Class";
