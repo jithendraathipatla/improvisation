@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Classbasedcomponent from "./Class";
+import "./component/main.css";
 const App = () => {
   return (
     <div>

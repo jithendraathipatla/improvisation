@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import "../App1.css";
 
 import UserItem from "./component/Users/Useritem";
 
