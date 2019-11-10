@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Axios from 'axios';
 import SearchInput from "./Search";
-import {Ring} from 'react-awesome-spinners'
 import {Link} from 'react-router-dom';
 
 const User = () => {
    const [response, setresponse] = useState([]);
-   const [loading,setloading] = useState(false);
    const [input, setinput] = useState("");
    const [userdata, setuserdata] = useState("");
    useEffect(() => {
@@ -25,7 +23,7 @@ const User = () => {
        alert("atleast pass some value");
      }
      setinput(value);
-     setloading(true);
+    
    }
 
    const handelInputChange = (e) => {
@@ -52,7 +50,7 @@ const User = () => {
         <br/> 
        <button className="button2" onClick={handelinputClear}>Clear Input</button>
        <div  className="card">
-        loading && <Ring/>
+      
        {response.map((item,i)=>{
          return(
              <div key={i}>
