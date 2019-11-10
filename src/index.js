@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./app.css";
 
 
 import Classbasedcomponent from "./Class";
