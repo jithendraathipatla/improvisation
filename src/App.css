@@ -1,22 +1,94 @@
-.App {
-  text-align: center;
+*{
+    margin:0px;
+    padding:0px;
 }
 
-.App-logo {
-  height: 40vmin;
+.navstyle{
+    background-color:purple;
+    color:white;
+    padding:5px;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 30px;
+    display:flex;
+}
+.navstyle h1{
+    flex:0.7;
+}
+.header_links{
+    color:whitesmoke;
+    margin-left: 85px;;
+    font-size: medium;
+    padding-top:3px;
+}
+.card{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    border: 1px solid #eee;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top:10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-input{
+    padding-top:60px;
+    padding-bottom:30px;
+    text-align: end;
+}
+.button2{
+    background: aqua;
+    padding: 4px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 40px;
 }
 
-.App-link {
-  color: #09d3ac;
+.card > div {
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding:5px;
 }
+
+img{
+    width:26%;
+    border-radius:50%;
+    text-align: center;
+}
+
+
+
+.button{
+    border:1px solid #eee;
+    background: rgb(111, 111, 207);
+    color:white;
+    padding: 10px;
+    margin:15px 0px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .button {
+      background-color: lightblue;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .card{
+       display: block;
+       padding: 59px 23px;
+       margin-left:10px;
+       border: none;
+    }
+    .card> div{
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+  }
+
+  .about-styling{
+      padding-top:60px;
+      text-align: center;
+  }
